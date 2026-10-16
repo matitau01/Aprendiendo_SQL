@@ -1,0 +1,2 @@
+/* Es la manera para insertar datos en una tabla. 
+Esto se divide dentro de la tabla con los campos en los que se van a insertar los datos.*/
