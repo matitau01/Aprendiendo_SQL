@@ -1,0 +1,1 @@
+/* Te permite borrar cosas en la base de datos. El borrado simepre se realiza con una regla de filtrado. Siempre hacerlo con el WHERE. */
