@@ -1,6 +1,10 @@
 /* Comando para crear tablas. 
-   El comando NOT NULL es una resticcion que se aplica a una columna para indicar que no puede contener valores NULL. 
-   UNIQUE es una restriccion que asegura que todos los valores en una columna sean distintos. */
+   - NOT NULL es una resticcion que se aplica a una columna para indicar que no puede contener valores NULL. 
+   - UNIQUE es una restriccion que asegura que todos los valores en una columna sean distintos. 
+   - UNIQUE lo que hace es crear un indice unico en la columna.
+   - PRIMARY KEY es una restriccion que combina la restriccion NOT NULL y UNIQUE.
+   - CHECK es una restriccion que permite especificar una condicion que los valores de la columna deben cumplir.
+   */
 
 CREATE TABLE persons (
 id int,
@@ -35,4 +39,15 @@ email varchar(50),
 created datetime,
 UNIQUE (id),
 PRIMARY KEY(id)
+);
+
+CREATE TABLE persons5 (
+id int NOT NULL,
+name varchar(100) NOT NULL,
+age int, 
+email varchar(50), 
+created datetime,
+UNIQUE (id),
+PRIMARY KEY(id),
+CHECK(age>=18)
 );
